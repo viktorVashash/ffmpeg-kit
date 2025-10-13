@@ -16,16 +16,16 @@ Pod::Spec.new do |s|
 
 # I'm almost certain there's something I could improve here.
 # I tried a log of different things when battling the `FFmpegKitConfig.h file does not exist` issue
-  s.source = { :path => ["./../ffmpeg-kit-ios-https"] } 
+  s.source        = { :git => 'https://github.com/viktorVashash/ffmpeg-kit.git', :tag => s.version.to_s }
 
-  # s.default_subspec   = 'https'
+#   s.default_subspec   = 'https'
 
   s.dependency "React-Core"
 
   s.source_files      = '**/FFmpegKitReactNativeModule.m',
   '**/FFmpegKitReactNativeModule.h'
 
-  s.dependency 'ffmpeg-kit-ios-https', "6.0.2"
+  s.dependency 'ffmpeg-kit-ios-https', "6.0"
 
 
   s.ios.deployment_target = '12.1'
