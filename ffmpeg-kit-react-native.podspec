@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
 
 # I'm almost certain there's something I could improve here.
 # I tried a log of different things when battling the `FFmpegKitConfig.h file does not exist` issue
-  s.source        = s.source = { :path => ["./../ffmpeg-kit-ios-https"] }
+  s.source        = { :git => 'https://github.com/viktorVashash/ffmpeg-kit.git', :tag => s.version.to_s }
 
 #   s.default_subspec   = 'https'
 
